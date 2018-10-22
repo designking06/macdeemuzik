@@ -8,7 +8,7 @@
  $amount = $POST['amount'];
  $product = $POST['product'];
  $size = $POST['productSize'];
- $description = "Product: "$product. " Size: ".$size;
+ $description = "Product: ".$product." Size: ".$size;
  $email = $POST['email'];
  $token = $POST['stripeToken'];
 // Create Customer In Stripe
