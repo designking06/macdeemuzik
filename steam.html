@@ -116,7 +116,16 @@ $alert= "";
                 <div id="TGTL1" class="w3-modal" style="display:none;"><div class="w3-modal-container w3-white container w3-padding-64">
                     <div class="row"><div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL1').style.display='none'" class="btn w3-red">Cancel</button></div></div>
                     <form action="processpayment.php" method="post" id="payment-form">
-                        <div class="form-row">
+                        <div class="form-row w3-margin">
+                          <div class="row"><div class="col-sm-12"><h2>Choose Your Shirt Size</h2></div></div><br>
+                          <div class="row w3-margin">
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">S</div>
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">M</div>
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">L</div>
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">XL</div>
+                          </div>
+                          <hr><br>
+                          <div class="row"><div class="col-sm-12"><h2>Enter Your Payment Details</h2></div></div><br>
                          <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
                          <input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
                          <input type="email" name="email" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Email Address">
@@ -141,7 +150,16 @@ $alert= "";
                 <div id="TGTL2" class="w3-modal" style="display:none;"><div class="w3-modal-container w3-white container w3-padding-64">
                     <div class="row"><div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL2').style.display='none'" class="btn w3-red">Cancel</button></div></div>
                     <form action="processpayment.php" method="post" id="payment-form">
-                        <div class="form-row">
+                        <div class="form-row w3-margin">
+                          <div class="row"><div class="col-sm-12"><h2>Choose Your Shirt Size</h2></div></div><br>
+                          <div class="row w3-margin">
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">S</div>
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">M</div>
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">L</div>
+                          <div class="col-sm-1"><input type="radio" name="productSize" value="">XL</div>
+                          </div>
+                          <hr><br>
+                          <div class="row"><div class="col-sm-12"><h2>Enter Your Payment Details</h2></div></div><br>
                          <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
                          <input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
                          <input type="email" name="email" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Email Address">
