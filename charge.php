@@ -7,6 +7,8 @@
  $last_name = $POST['last_name'];
  $amount = $POST['amount'];
  $product = $POST['product'];
+ $size = $POST['productSize'];
+ $description = "Product: "$product. " Size: ".$size;
  $email = $POST['email'];
  $token = $POST['stripeToken'];
 // Create Customer In Stripe
@@ -19,7 +21,7 @@ $customer = \Stripe\Customer::create(array(
 $charge = \Stripe\Charge::create(array(
   "amount" => $amount,
   "currency" => "usd",
-  "description" => $product,
+  "description" => $description,
   "customer" => $customer->id
 ));
 // Redirect to success
