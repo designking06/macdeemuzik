@@ -100,7 +100,7 @@ if(isset($_POST['meta']) && !empty($_POST['meta'])){
           <input type="tel" name="tel" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Phone Number (optional)">
           <input type="text" name="address" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Shipping Address" required>
           <input type="hidden" name="amount" value="<?php echo $amount;?>" required>
-          <input type="hidden" name="description" value="<?php echo $productDetails;?>" required>
+          <input type="hidden" name="productDetails" value="<?php echo $productDetails;?>" required>
           <!-- Used to display form errors -->
           <div id="card-errors" role="alert"></div>
         </div>

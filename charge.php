@@ -21,8 +21,8 @@
  $address = $POST['address'];
  $amount = $POST['amount'];
  $description = $_POST['ProductDetails'];
- $orderInfo = "Customer Name: ".$first_name." ".$last_name.". Phone: ".$tel.". Email: ".$email." Product Info: ".$description.". Shipping Address: ".$address;
- $email = $POST['email'];
+  $email = $POST['email'];
+ $orderInfo = "Customer Name: ".$first_name." ".$last_name."| Phone: ".$tel."| Email: ".$email."| Product Info: ".$description."| Shipping Address: ".$address."|";
  $token = $POST['stripeToken'];
 // Create Customer In Stripe
 try{
