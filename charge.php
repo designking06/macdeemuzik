@@ -5,7 +5,11 @@
  $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
  $first_name = $POST['first_name'];
  $last_name = $POST['last_name'];
- $tel = $POST['te;'];
+ if(empty($POST['tel'])){
+   $tel = "Not Provided.";
+ }else{
+ $tel = $POST['tel'];
+}
  $address = $POST['address'];
  $amount = $POST['amount'];
  $description = $_POST['ProductDetails'];
