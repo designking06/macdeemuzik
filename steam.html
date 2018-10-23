@@ -108,98 +108,73 @@ $alert= "";
           <div id="productRow" class="row w3-margin">
               <div class="col-sm-12"><h1 class="w3-text-yellow">MaC Dee Merch</h1></div>
               <div class="col-sm-12"><h3 class="alert alert-success"><?php echo $alert;?></h3></div>
+
               <div class="col-sm-4 w3-padding">
                   <div style="height:200px;background-image: url(http://cagency.net/media/images/brokeamb2.jpeg);background-size:contain;background-position:center;"></div>
                   <h2>TG & TL Shirt w/ CD</h2>
                   <h3>$17</h3>
-                  <button onclick="document.getElementById('TGTL1').style.display='block'" class="btn w3-green">Buy</button>
-                <div id="TGTL1" class="w3-modal" style="display:none;"><div class="w3-modal-container w3-white container w3-padding-64">
-                    <div class="row"><div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL1').style.display='none'" class="btn w3-red">Cancel</button></div></div>
-                    <form action="processpayment.php" method="post" id="payment-form">
-                        <div class="form-row w3-margin">
-                          <div class="row"><div class="col-sm-12"><h2>Choose Your Shirt Size</h2></div></div><br>
-                          <div class="row w3-margin">
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">S</div>
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">M</div>
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">L</div>
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">XL</div>
-                          </div>
-                          <hr><br>
-                          <div class="row"><div class="col-sm-12"><h2>Enter Your Payment Details</h2></div></div><br>
-                         <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
-                         <input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
-                         <input type="email" name="email" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Email Address">
-                          <div id="card-element" class="form-control">
-                            <!-- a Stripe Element will be inserted here. -->
-                          </div>
-                          <input type="hidden" name="amount" value="1700">
-                          <input type="hidden" name="product" value="TG & TL Shirt w/ CD">
-                          <input type="hidden" name="comp" value="Trill Gentlemen &amp; True Ladies LLC.">
-                          <!-- Used to display form errors -->
-                          <div id="card-errors" role="alert"></div>
-                        </div>
-                        <button class="btn w3-green">Pay $17</button>
+                  <button onclick="document.getElementById('TGTL1').style.display='block'" class="btn w3-green">Order</button>
+                  <div id="TGTL1" class="w3-modal" style="display:none;">
+                    <div class="w3-modal-container w3-white container w3-padding-64">
+                    <div class="row">
+                      <div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL1').style.display='none'" class="btn w3-red">Cancel</button></div>
+                    </div>
+                    <form action="checkout.php" method="post">
+                      <div class="row"><div class="col-sm-12"><h2>Choose Your Shirt Size</h2></div></div><br>
+                      <div class="row w3-margin">
+                      <div class="col-sm-4"></div>
+                      <div class="col-sm-1"><input type="radio" name="meta" value="S">S</div>
+                      <div class="col-sm-1"><input type="radio" name="meta" value="M">M</div>
+                      <div class="col-sm-1"><input type="radio" name="meta" value="L">L</div>
+                      <div class="col-sm-1"><input type="radio" name="meta" value="XL">XL</div>
+                      <div class="col-sm-4"></div>
+                      </div>
+                      <input type="hidden" name="product" value="TG & TL Shirt w/ CD">
+                      <input type="hidden" name="amount" value="1700">
+                      <input type="submit" name="checkout" value="Order" class="btn w3-green">
                     </form>
-                </div></div>
+                </div>
               </div>
+            </div>
               <div class="col-sm-4 w3-padding">
                   <div style="height:200px;background-image: url(http://cagency.net/media/images/brokeamb4.jpeg);background-size:contain;background-position:center;"></div>
                   <h2>TG & TL Shirt</h2>
                   <h3>$15</h3>
-                  <button onclick="document.getElementById('TGTL2').style.display='block'" class="btn w3-green">Buy</button>
-                <div id="TGTL2" class="w3-modal" style="display:none;"><div class="w3-modal-container w3-white container w3-padding-64">
-                    <div class="row"><div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL2').style.display='none'" class="btn w3-red">Cancel</button></div></div>
-                    <form action="processpayment.php" method="post" id="payment-form">
-                        <div class="form-row w3-margin">
-                          <div class="row"><div class="col-sm-12"><h2>Choose Your Shirt Size</h2></div></div><br>
-                          <div class="row w3-margin">
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">S</div>
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">M</div>
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">L</div>
-                          <div class="col-sm-1"><input type="radio" name="productSize" value="">XL</div>
-                          </div>
-                          <hr><br>
-                          <div class="row"><div class="col-sm-12"><h2>Enter Your Payment Details</h2></div></div><br>
-                         <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
-                         <input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
-                         <input type="email" name="email" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Email Address">
-                          <div id="card-element" class="form-control">
-                            <!-- a Stripe Element will be inserted here. -->
-                          </div>
-                          <input type="hidden" name="amount" value="1500">
-                          <input type="hidden" name="product" value="TG & TL Shirt">
-                          <input type="hidden" name="comp" value="Trill Gentlemen &amp; True Ladies LLC.">
-                          <!-- Used to display form errors -->
-                          <div id="card-errors" role="alert"></div>
+                  <button onclick="document.getElementById('TGTL2').style.display='block'" class="btn w3-green">Order</button>
+                  <div id="TGTL2" class="w3-modal" style="display:none;">
+                    <div class="w3-modal-container w3-white container w3-padding-64">
+                      <div class="row">
+                        <div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL2').style.display='none'" class="btn w3-red">Cancel</button></div>
+                      </div>
+                      <form action="checkout.php" method="post">
+                        <!-- choose shirt size-->
+                        <div class="row"><div class="col-sm-12"><h2>Choose Your Shirt Size</h2></div></div><br>
+                        <div class="row w3-margin">
+                          <div class="col-sm-4"></div>
+                          <div class="col-sm-1"><input type="radio" name="meta" value="S">S</div>
+                          <div class="col-sm-1"><input type="radio" name="meta" value="M">M</div>
+                          <div class="col-sm-1"><input type="radio" name="meta" value="L">L</div>
+                          <div class="col-sm-1"><input type="radio" name="meta" value="XL">XL</div>
+                          <div class="col-sm-4"></div>
                         </div>
-                        <button class="btn w3-green">Pay $15</button>
-                    </form>
-                </div></div>
+                        <!-- Product Info -->
+                        <input type="hidden" name="product" value="TG & TL Shirt">
+                        <input type="hidden" name="amount" value="1500">
+                        <input type="submit" name="checkout" value="Order" class="btn w3-green">
+                      </form>
+                  </div>
+                </div>
               </div>
               <div class="col-sm-4 w3-padding">
                   <div style="height:200px;background-image: url(http://cagency.net/media/images/brokeamb3.jpeg);background-size:cover;background-position:center;"></div>
                   <h2>Broke Ambi$ionz CD</h2>
                   <h3>$5</h3>
-                  <button onclick="document.getElementById('TGTL3').style.display='block'" class="btn w3-green">Buy</button>
-                <div id="TGTL3" class="w3-modal" style="display:none;"><div class="w3-modal-container w3-white container w3-padding-64">
-                    <div class="row"><div class="col-sm-12 w3-margin"><button onclick="document.getElementById('TGTL3').style.display='none'" class="btn w3-red">Cancel</button></div></div>
-                    <form action="processpayment.php" method="post" id="payment-form">
-                        <div class="form-row">
-                         <input type="text" name="first_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="First Name">
-                         <input type="text" name="last_name" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Last Name">
-                         <input type="email" name="email" class="form-control mb-3 StripeElement StripeElement--empty" placeholder="Email Address">
-                          <div id="card-element" class="form-control">
-                            <!-- a Stripe Element will be inserted here. -->
-                          </div>
-                          <input type="hidden" name="amount" value="500">
-                          <input type="hidden" name="product" value="Broke Ambi$ionz CD">
-                          <input type="hidden" name="comp" value="Trill Gentlemen &amp; True Ladies LLC.">
-                          <!-- Used to display form errors -->
-                          <div id="card-errors" role="alert"></div>
-                        </div>
-                        <button class="btn w3-green">Pay $5</button>
+                    <form action="checkout.php" method="post">
+                      <!-- Product Info -->
+                      <input type="hidden" name="product" value="Broke Ambi$ionz CD">
+                      <input type="hidden" name="amount" value="500">
+                      <input type="submit" name="checkout" value="Order" class="btn w3-green">
                     </form>
-                </div></div>
               </div>
           </div>
       </div>
