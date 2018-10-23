@@ -3,13 +3,21 @@
   \Stripe\Stripe::setApiKey('sk_test_J6BclpBYnpdmH3q0RzQuE27V');
  // Sanitize POST Array
  $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
- $first_name = $POST['first_name'];
- $last_name = $POST['last_name'];
+ if(!empty($POST['first_name'])){
+   $first_name = $POST['first_name'];
+  }else{
+    $first_name = "'No First Name'.";
+  }
+  if(!empty($POST['last_name'])){
+    $last_name = $POST['last_name'];
+  }else{
+    $last_name = "'No Last Name'.";
+  }
  if(empty($POST['tel'])){
    $tel = "Not Provided.";
- }else{
- $tel = $POST['tel'];
-}
+   }else{
+   $tel = $POST['tel'];
+  }
  $address = $POST['address'];
  $amount = $POST['amount'];
  $description = $_POST['ProductDetails'];
