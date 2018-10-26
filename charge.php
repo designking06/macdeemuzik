@@ -25,6 +25,7 @@
  $orderInfo = "Customer Name: ".$first_name." ".$last_name."| Phone: ".$tel."| Email: ".$email."| Product Info: ".$description."| Shipping Address: ".$address."|";
  $token = $POST['stripeToken'];
 // Create Customer In Stripe
+//
 try{
 $customer = \Stripe\Customer::create(array(
   "email" => $email,

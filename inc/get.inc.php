@@ -22,13 +22,13 @@ function getHead(){
     font-family: 'Permanent Marker', cursive;
   }
   </style>
-  <div id="bg" class="container-fluid w3-white w3-text-white text-center" style="min-height:100%;max-width:100%;background-image:url(img/_MG_0175.JPG);background-position:left;background-size:2400px 1700px;background-size:no-repeat;">
+  <div id="bg" class="container-fluid w3-text-white text-center" style="min-height:100%;max-width:100%;background-image:url(https://cagency.net/media/images/_MG_0175.JPG);background-position:left;background-size:2400px 1700px;background-size:no-repeat;">
   <div class="text-center w3-black" style="padding:30 0 0 0;">
     <h1 id="font">MaC Dee Muzik</h1>
     <p style="padding:0 0 20 0">The Official Site</p>
   <!-- Social -->
-  <div id="social" class="w3-padding container-fluid w3-yellow text-center">
-    <div class="row w3-hide-large w3-hide-medium" style="max-width:80%;margin:auto;" onclick="document.getElementById('smallSocial').style.display='block'">Social</div>
+  <div class="row w3-hide-large w3-padding w3-yellow" style="max-width:100%;margin:auto;" onclick="document.getElementById('smallSocial').style.display='block'">Social</div>
+  <div id="social" class="w3-padding container-fluid w3-yellow text-center w3-hide-medium">
     <div class="row w3-hide-small" style="max-width:40%;margin:auto;">
       <div id="0" class="col-sm-3 w3-padding w3-hover-blue"><img src="../favicon/insta_glyph.png" height="25" width="25"/></div>
       <div id="1" class="col-sm-3 w3-padding w3-hover-blue"><img src="../favicon/fb_glyph2.png" height="30" width="30"/></div>
@@ -37,10 +37,10 @@ function getHead(){
     </div>
   </div>
   <!-- Banner Picture -->
-  <div id="hero" class="container-fluid" style="min-height:30%;background-image:url(img/hero2.png);background-size:1366px 340px;background-position:center;"></div>
+  <div id="hero" class="container-fluid" style="min-height:30%;background-image:url(https://cagency.net/media/images/hero2.png);background-size:1366px 340px;background-position:center;"></div>
   <!-- Navigation -->
-  <div class="w3-padding container-fluid w3-yellow text-center">
-    <div class="row w3-hide-large w3-hide-medium" style="max-width:80%;margin:auto;" onclick="document.getElementById('smallNav').style.display='block'">Menu</div>
+  <div class="row w3-hide-large w3-yellow w3-padding" style="max-width:100%;margin:auto;" onclick="document.getElementById('smallNav').style.display='block'">Menu</div>
+  <div class="w3-padding container-fluid w3-yellow text-center w3-hide-medium">
     <div class="row w3-hide-small" style="max-width:80%;margin:auto;">
       <div id="1" class="col-sm-4"><a href="video.php"><h4>Videos</h4></a></div>
             <div id="0" class="col-sm-4 w3-border-bottom"><a href="index.php"><h4>Home</h4></a></div>
@@ -48,24 +48,30 @@ function getHead(){
     </div>
   </div>
   <!-- Mobile Menu -->
-  <div id="smallNav" class="container modal row w3-hide-large w3-black" style="display:none;height:100%;padding-top:40%;vertical-align:middle;">
-    <div class="w3-modal-content w3-black">
-        <div class="col-sm-12 text-center w3-red w3-padding" onclick="document.getElementById('smallNav').style.display='none'">X</div>
-        <div class="col-sm-12 w3-border-bottom"><a href="index.php"><h1>MaC Dee Muzik</h1></a></div><br>
-        <div id="0" class="col-sm-3"><a href="index.php"><h4>Home</h4></a></div>
-        <div id="1" class="col-sm-3"><a href="video.php"><h4>Videos</h4></a></div>
-        <div id="2" class="col-sm-3"><a href="music.php"><h4>Musik</h4></a></div>
-        <div id="3" class="col-sm-3"><a href=""><h4>Blog</a></h4></div>
+  <div id="smallNav" class="container modal row w3-hide-large w3-white" style="display:none;height:100%;padding-top:40%;vertical-align:middle;">
+    <div class="w3-modal-content w3-padding-32">
+        <div class="row">
+          <div class="col-sm-12 text-center w3-padding">
+            <button class="btn w3-red" onclick="document.getElementById('smallNav').style.display='none'">Close Menu</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12"><a href="index.php"><h1>MaC Dee Muzik</h1></a></div>
+          <div id="0" class="col-sm-3"><a href="index.php"><h3>Home</h3></a></div>
+          <div id="1" class="col-sm-3"><a href="video.php"><h3>Videos</h3></a></div>
+          <div id="2" class="col-sm-3"><a href="music.php"><h3>Musik</h3></a></div>
+          <div id="3" class="col-sm-3"><a href="/stream/"><h3>Shop</h3></a></div>
+      </div>
     </div>
   </div>
 <!-- Mobile Social Media Menu -->
-  <div id="smallSocial" class="container modal row w3-hide-large w3-black" style="display:none;height:100%;padding-top:40%;vertical-align:middle;margin:auto;">
+  <div id="smallSocial" class="container w3-modal row w3-hide-large w3-black" style="display:none;height:100%;padding-top:40%;vertical-align:middle;margin:auto;">
     <div class="w3-modal-content w3-black">
       <div class="col-sm-12 text-center w3-red w3-padding" onclick="document.getElementById('smallSocial').style.display='none'">X</div>
-      <div id="0" class="col-sm-3 w3-padding w3-blue w3-hover-yellow"><img src="../favicon/insta_glyph.png" height="25" width="25"/></div>
-      <div id="1" class="col-sm-3 w3-padding w3-blue w3-hover-yellow"><img src="../favicon/fb_glyph2.png" height="30" width="30"/></div>
-      <div id="2" class="col-sm-3 w3-padding w3-blue w3-hover-yellow"><img src="../favicon/soundcloud_glyph.png" height="30" width="30"/></div>
-      <div id="3" class="col-sm-3 w3-padding w3-blue w3-hover-yellow"><img src="../favicon/spotify_glyph.png" height="25" width="25"/></div>
+      <div id="0" class="col-sm-3 w3-padding w3-blue"><img src="../favicon/insta_glyph.png" height="25" width="25"/></div>
+      <div id="1" class="col-sm-3 w3-padding w3-blue"><img src="../favicon/fb_glyph2.png" height="30" width="30"/></div>
+      <div id="2" class="col-sm-3 w3-padding w3-blue"><img src="../favicon/soundcloud_glyph.png" height="30" width="30"/></div>
+      <div id="3" class="col-sm-3 w3-padding w3-blue"><img src="../favicon/spotify_glyph.png" height="25" width="25"/></div>
     </div>
   </div>
   <!-- End Nav -->

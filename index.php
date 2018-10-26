@@ -19,6 +19,38 @@ getHead();
   <div class="row">Stream more, go to <a href="music.php">Musik Page</a></div>
     <hr class="w3-clear">
 </div>
+<!-- Radio -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <!-- embed radio flyer here -->
+      <img src="https://cagency.net/media/images/macdeeradio.jpg" class="w3-image">
+    </div>
+    <div class="col-sm-6">
+      <!-- embed radio here -->
+      <h2>Stream It Right Here!</h2>
+      <iframe src="https://tunein.com/embed/player/s223421/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+      <div class="w3-margin col-sm-12 w3-text-blue"><h4>What Should My Next Topic Be?</h4></div>
+                <div class="col-sm-12">
+                     <form action="/phpmailer/send_contactform.php" target="_blank" method="POST">
+                            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                              <div class="w3-half">
+                                <input class="form-control w3-border" type="text" placeholder="Your Name" required name="name" required>
+                              </div>
+                              <div class="w3-half">
+                                <input class="form-control w3-border" type="email" placeholder="Email" required name="email" required>
+                              </div>
+                            </div>
+                            <input class="form-control w3-border" type="text" placeholder="Next Topic" required name="message" required>
+                            <button class="w3-button w3-blue w3-section" type="submit">
+                              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                            </button>
+                          </form>
+                </div>
+    </div>
+  </div>
+</div>
+<!-- End Radio -->
 <!--Performances -->
 <div class="container" style="width:100%;">
   <div class="row">
