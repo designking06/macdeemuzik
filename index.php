@@ -52,7 +52,7 @@ getHead();
 </div>
 <!-- End Radio -->
 <!--Performances -->
-<div class="container" style="width:100%;">
+<!--div class="container" style="width:100%;">
   <div class="row">
     <h1>Performances</h1>
   </div>
@@ -94,7 +94,7 @@ getHead();
         <div class="col-sm-2"></div>
   </div>
   <hr class="w3-clear">
-</div>
+</div-->
 <!-- End Perf -->
 
 <!-- Music -->
